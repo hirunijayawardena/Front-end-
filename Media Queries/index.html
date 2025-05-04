@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Default styles */
+        .box {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: lightblue;
+            color: black;
+        }
+
+        /* Media query for screens wider than 768px */
+        @media (min-width: 768px) {
+            .box {
+                background-color: lightgreen;
+                color: white;
+            }
+        }
+
+        /* Media query for screens wider than 1024px */
+        @media (min-width: 1024px) {
+            .box {
+                background-color: coral;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Resize the browser window to see the effect of media queries!
+        </div>
+    </div>
+</body>
+</html>
