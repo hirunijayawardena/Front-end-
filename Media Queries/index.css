@@ -1,16 +1,69 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: lightgreen;
+    font-family: "Lucida Sans", sans-serif;
 }
 
-button{
-    background-color: lightcoral;
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+        'header header header header header header'
+        'menu main main main main right'
+        'footer footer footer footer footer footer';
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
 }
-@media only screen and (max-width: 600px){
-    body{
-        background-color: lightblue;
-    }
 
-    button{
-        background-color: lightyellow;
-    }
+.grid-container > div{
+    padding: 10px;
+    font-size: 16px;
+}
+
+.item1{
+    grid-area: header;
+    background-color: purple;
+    text-align: center;
+    color: #ffffff;
+}
+
+.item1 > h1{
+    font-size: 40px;
+}
+
+.item2{
+    grid-area: menu;
+}
+
+.item2 ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.item2 li{
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: white;
+}
+
+.item2 li:hover{
+    background-color: #0099cc;
+}
+
+.item3{
+    grid-area: main;
+}
+
+.item3 > h1{
+    font-size: 30px;
+    margin-bottom: 7px;
+}
+
+.item3 > p{
+    margin-bottom: 7px;
 }
