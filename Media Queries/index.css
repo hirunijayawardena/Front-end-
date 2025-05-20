@@ -67,3 +67,8 @@ body{
 .item3 > p{
     margin-bottom: 7px;
 }
+
+.item4{
+    grid-area: right;
+    border: 2px solid #0099cc;
+}
